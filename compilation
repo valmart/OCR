@@ -3,3 +3,5 @@ gcc -c helloworld.c -Wall `pkg-config opencv --cflags`
 
 # édition des liens
 gcc helloworld.o -o helloworld `pkg-config opencv --libs`
+
+g++ `pkg-config opencv --cflags --libs` binarisation.cpp -o binarisation
